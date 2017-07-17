@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="4" guice-stage="DEVELOPMENT" name="Failed suite [Parallel test suite]" parallel="methods">
+  <test name="Regression 1(failed)" parallel="methods">
+    <classes>
+      <class name="com.org.Functional.Tests.AppLandingTests">
+        <methods>
+          <include name="LaunchApplication"/>
+          <include name="disposeDriver"/>
+          <include name="validateSuccessfulLogin"/>
+        </methods>
+      </class> <!-- com.org.Functional.Tests.AppLandingTests -->
+    </classes>
+  </test> <!-- Regression 1(failed) -->
+</suite> <!-- Failed suite [Parallel test suite] -->

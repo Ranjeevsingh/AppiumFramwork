@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parallel test suite" duration-ms="48485" started-at="2017-07-17T05:41:39Z" finished-at="2017-07-17T05:42:27Z">
+    <groups>
+    </groups>
+    <test name="Regression 1" duration-ms="48485" started-at="2017-07-17T05:41:39Z" finished-at="2017-07-17T05:42:27Z">
+      <class name="com.org.Functional.Tests.AppLandingTests">
+        <test-method status="PASS" signature="LaunchApplication()[pri:0, instance:com.org.Functional.Tests.AppLandingTests@5f341870]" name="LaunchApplication" is-config="true" duration-ms="3590" started-at="2017-07-17T11:11:39Z" finished-at="2017-07-17T11:11:42Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method status="PASS" signature="CheckAppLandingPage()[pri:0, instance:com.org.Functional.Tests.AppLandingTests@5f341870]" name="CheckAppLandingPage" duration-ms="19250" started-at="2017-07-17T11:11:42Z" finished-at="2017-07-17T11:12:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CheckAppLandingPage -->
+        <test-method status="PASS" signature="disposeDriver()[pri:0, instance:com.org.Functional.Tests.AppLandingTests@5f341870]" name="disposeDriver" is-config="true" duration-ms="838" started-at="2017-07-17T11:12:02Z" finished-at="2017-07-17T11:12:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disposeDriver -->
+        <test-method status="PASS" signature="LaunchApplication()[pri:0, instance:com.org.Functional.Tests.AppLandingTests@5f341870]" name="LaunchApplication" is-config="true" duration-ms="3047" started-at="2017-07-17T11:12:02Z" finished-at="2017-07-17T11:12:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LaunchApplication -->
+        <test-method status="PASS" signature="validateSuccessfulLogin()[pri:0, instance:com.org.Functional.Tests.AppLandingTests@5f341870]" name="validateSuccessfulLogin" duration-ms="20961" started-at="2017-07-17T11:12:06Z" finished-at="2017-07-17T11:12:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSuccessfulLogin -->
+        <test-method status="PASS" signature="disposeDriver()[pri:0, instance:com.org.Functional.Tests.AppLandingTests@5f341870]" name="disposeDriver" is-config="true" duration-ms="780" started-at="2017-07-17T11:12:26Z" finished-at="2017-07-17T11:12:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- disposeDriver -->
+      </class> <!-- com.org.Functional.Tests.AppLandingTests -->
+    </test> <!-- Regression 1 -->
+  </suite> <!-- Parallel test suite -->
+</testng-results>
