@@ -1,10 +1,18 @@
 package com.org.commonClasses;
 
+import java.io.File;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.remote.CapabilityType;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
+
+import bsh.Remote;
 
 
 public class WebDriverUtility {
@@ -23,6 +31,24 @@ public class WebDriverUtility {
 		{
 			System.setProperty("webdriver.chrome.driver","drivers/chromedriver.exe");
 			driver=new ChromeDriver();
+			
+		}
+		else if (BrowserName.toLowerCase().contains("ios"))
+		{
+			File app=new File("TBD AppPath.app");
+			
+			DesiredCapabilities capabilities=new DesiredCapabilities();
+			capabilities.setCapability(CapabilityType.BROWSER_NAME, "iOS");
+			capabilities.setCapability(CapabilityType.VERSION, "6.1");
+			capabilities.setCapability(CapabilityType.PLATFORM, "Mac");
+			capabilities.setCapability("app", app.getAbsolutePath());
+			
+			try {
+				driver=new RemoteWebDriver(new URL("TBD Appium URL ex - http://localhost:4723/wd/hub"), capabilities);
+			} catch (MalformedURLException e) {
+				
+				e.printStackTrace();
+			}
 			
 		}
 		
