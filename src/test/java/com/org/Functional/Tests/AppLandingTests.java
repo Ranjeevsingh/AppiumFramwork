@@ -1,8 +1,6 @@
 package com.org.Functional.Tests;
 
-
 import org.testng.annotations.Test;
-
 import com.org.commonClasses.TestBase;
 import com.org.pageFunctionLibrary.AppLandingPageMethods;
 
