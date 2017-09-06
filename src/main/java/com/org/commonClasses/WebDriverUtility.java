@@ -12,9 +12,6 @@ import org.openqa.selenium.remote.CapabilityType;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 
-import bsh.Remote;
-
-
 public class WebDriverUtility {
 	
 	public WebDriver driver;
